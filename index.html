@@ -15,21 +15,19 @@
 </head>
   
  <!-- Begin Verbox {literal} -->
-  <script>
-    (function () {
-      (function c(d, w, m, i) {
+<script>
+    (function(){(function c(d,w,m,i) {
         window.supportAPIMethod = m;
         var s = d.createElement('script');
-        s.id = 'supportScript';
+        s.id = 'supportScript'; 
         var id = '426d06d981435f586d1cf6b8fd240b2f';
         s.src = (!i ? 'https://admin.verbox.ru/support/support.js' : 'https://static.site-chat.me/support/support.int.js') + '?h=' + id;
-        s.onerror = i ? undefined : function () { c(d, w, m, true) };
-        w[m] = w[m] || function () { (w[m].q = w[m].q || []).push(arguments); };
+        s.onerror = i ? undefined : function(){c(d,w,m,true)};
+        w[m] = w[m] || function(){(w[m].q = w[m].q || []).push(arguments);};
         (d.head || d.body).appendChild(s);
-      })(document, window, 'Verbox')
-    })();
-  </script>
-  <!-- {/literal} End Verbox -->
+    })(document,window,'Verbox')})();
+</script>
+<!-- {/literal} End Verbox -->
   
 <body>
  
