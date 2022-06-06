@@ -11,26 +11,9 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="apple-touch-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="https://atuin.ru/demo/OwlCarousel2/dist/assets/owl.carousel.min.css" type="text/css">
   <title>Арт Кирпич</title>
 </head>
 
-<!-- Begin Verbox {literal} -->
-<script>
-  (function () {
-    (function c(d, w, m, i) {
-      window.supportAPIMethod = m;
-      var s = d.createElement('script');
-      s.id = 'supportScript';
-      var id = '426d06d981435f586d1cf6b8fd240b2f';
-      s.src = (!i ? 'https://admin.verbox.ru/support/support.js' : 'https://static.site-chat.me/support/support.int.js') + '?h=' + id;
-      s.onerror = i ? undefined : function () { c(d, w, m, true) };
-      w[m] = w[m] || function () { (w[m].q = w[m].q || []).push(arguments); };
-      (d.head || d.body).appendChild(s);
-    })(document, window, 'Verbox')
-  })();
-</script>
-<!-- {/literal} End Verbox -->
 
 <body>
 
@@ -108,49 +91,45 @@
       </div>
 
       <div class="cot__button">
-        <a href="">Каталог</a>
+        <a href="katalog.html">Каталог</a>
       </div>
 
     </div>
 
     <div class="container">
-      <div class="carousel-2 owl-carousel">
+      <div class="icons">
 
-        <div class="owl-pic">
-          <img src="img/brown-brick-wall.jpg" alt="" />
+        <div class="icon__1">
+          <img src="img/delivery.png" alt="">
+          <p>Быстрая доставка</p>
         </div>
-        <!-- Еще Фотографии  -->
 
-        <div class="owl-pic">
-          <img src="https://via.placeholder.com/360" alt="" />
+        <div class="icon__2">
+          <img src="img/repair.png" alt="">
+          <p>Мантаж и другие услуги</p>
         </div>
-        <!-- Еще Фотографии  -->
 
-        <div class="owl-pic">
-          <img src="https://via.placeholder.com/360" alt="" />
-        </div>
-        <!-- Еще Фотографии  -->
-
-        <div class="owl-pic">
-          <img src="https://via.placeholder.com/360" alt="" />
-        </div>
-        <!-- Еще Фотографии  -->
-
-        <div class="owl-pic">
-          <img src="https://via.placeholder.com/360" alt="" />
-        </div>
-        <!-- Еще Фотографии  -->
-
-        <div class="owl-pic">
-          <img src="https://via.placeholder.com/360" alt="" />
-        </div>
-        <!-- Еще Фотографии  -->
-
-        <div class="owl-pic">
-          <img src="https://via.placeholder.com/360" alt="" />
+        <div class="icon__3">
+          <img src="img/quality.png" alt="">
+          <p>Гарантировное качество</p>
         </div>
 
       </div>
+
+      <div id="anycomment-app"></div>
+      <script>
+        AnyComment = window.AnyComment || []; AnyComment.Comments = [];
+        AnyComment.Comments.push({
+          "root": "anycomment-app",
+          "app_id": 4047,
+          "language": "ru"
+        })
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.anycomment.io/comment/embed.js";
+        var sa = document.getElementsByTagName("script")[0];
+        sa.parentNode.insertBefore(s, s.nextSibling);
+      </script>
+
     </div>
 
     <div class="container">
@@ -203,32 +182,5 @@
       </div>
     </div>
   </section>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://atuin.ru/demo/OwlCarousel2/dist/assets/owl.carousel.min.js"></script>
-  <script type="text/javascript">
-    let $owl = $('.carousel-2');
-    $owl.children().each(function (index) {
-      $(this).attr('data-position', index);
-    });
-    $(document).on('click', '.owl-item>div', function () {
-      let $speed = 300;
-      $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
-    });
-    $owl.owlCarousel({
-      loop: true,
-      center: true,
-      stagePadding: 70,
-      nav: true,
-      dots: false,
-      navText: ['&lsaquo;', '&rsaquo;'],
-      responsive: {
-        0: { items: 1 },
-        600: { items: 2 },
-        992: { items: 3 },
-        1200: { items: 4 },
-        1600: { items: 5 }
-      }
-    });
-  </script>
 
 </body>
