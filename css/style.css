@@ -252,8 +252,7 @@ html {
 /*---------*/
 .container__comment {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto 70px;
 }
