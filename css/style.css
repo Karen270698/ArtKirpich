@@ -249,6 +249,21 @@ html {
   border-radius: 3px;
 }
 
+/*---------*/
+.container__comment {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#anycomment-stream {
+  width: 48%;
+}
+
+.map {
+  width: 48%;
+}
+
 /*-----Footer-----*/
 
 .section__footer {
