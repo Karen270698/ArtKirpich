@@ -240,12 +240,12 @@ html {
 }
 
 .two p {
-  margin: 0 15px 0 0;
-  line-height: 24px;
+  margin: 0 60px 0 0;
+  line-height: 28px;
 }
 
 .two img {
-  width: 460px;
+  width: 520px;
   border-radius: 3px;
 }
 
