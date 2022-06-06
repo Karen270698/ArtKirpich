@@ -100,11 +100,7 @@ html {
 
 .section {
   margin: 25px 0;
-}
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto 70px;
+  padding: 15px 0;
 }
 
 .container {
@@ -112,6 +108,8 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  max-width: 1280px;
+  margin: 0 auto 70px;
 }
 
 .container__head {
