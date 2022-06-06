@@ -147,21 +147,18 @@
 
 
     <div class="container__comment">
-      <div id="anycomment-login"></div>
+      <div id="anycomment-app"></div>
 <script>
-    AnyComment = window.AnyComment || []; AnyComment.Login = [];
-    window.AnyComment.Login.push({
-        root: 'anycomment-login',
-        app_id: 4048,
-        providers: 'vkontakte,twitter,odnoklassniki,google,mailru',
-        onLogin: function (envelope) {
-            console.log(envelope);
-        }
-    });
-    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-    s.src = "https://cdn.anycomment.io/assets/js/login.js";
-    var sa = document.getElementsByTagName("script")[0];
-    sa.parentNode.insertBefore(s, s.nextSibling);
+AnyComment = window.AnyComment || []; AnyComment.Comments = [];
+AnyComment.Comments.push({
+    "root": "anycomment-app",
+    "app_id": 4049,
+    "language": "ru"
+})
+var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+s.src = "https://widget.anycomment.io/comment/embed.js";
+var sa = document.getElementsByTagName("script")[0];
+sa.parentNode.insertBefore(s, s.nextSibling);
 </script>
 
       <div class="map">
